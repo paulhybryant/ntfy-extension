@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ntfy</title>
+    <style>
+      /* Add any custom styling here */
+      .container {
+        display: flex;
+        align-items: center;
+      }
+      input[type="text"] {
+        flex: 1;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Notification content..."
+      />
+      <button type="submit" id="sendBtn" onclick="sendMessage()">Send</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Ntfy",
+    "version": "1.0.0",
+    "description": "Send ntfy notifications from your browser",
+    "icons": {
+        "128": "icons/ntfy128.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "128": "icons/ntfy128.png"
+        }
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
