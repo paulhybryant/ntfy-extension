@@ -2,13 +2,14 @@ const sendBtnId = document.getElementById("sendBtn");
 if (sendBtnId) {
   sendBtnId.onclick = function () {
     var input = document.getElementById("messageInput");
-    fetch("https://ntfy.sh", {
+    const serverAddress = localStorage.getItem("server-address") || "https://ntfy.sh";
+    fetch(serverAddress, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        topic: "paulhybryant",
+        topic: localStorage.getItem("topic"),
         message: input.value,
       }),
     })

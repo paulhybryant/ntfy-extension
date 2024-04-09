@@ -14,5 +14,8 @@
     },
     "permissions": [
         "activeTab"
-    ]
+    ],
+    "options_ui": {
+        "page": "options/options.html"
+    }
 }
