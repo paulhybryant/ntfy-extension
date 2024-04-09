@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Options</title>
+    <title>Configurations</title>
+    <style>
+        /* Add some basic styling for demonstration purposes */
+        table {
+            width: 100%;
+        }
+        input {
+            width: 100%; /* Make the input box occupy all available space */
+        }
+    </style>
   </head>
   <body>
-    <h1>Extension Options</h1>
+    <h1>Ntfy Configurations</h1>
 
     <form id="options-form">
-      <div>
-        <label for="server-address">Server:</label>
-        <input type="text" id="server-address" name="server-address" />
-      </div>
-      <div>
-        <label for="topic">Topic:</label>
-        <input type="text" id="topic" name="topic" />
-      </div>
+      <table>
+        <tr>
+          <td><label for="server-address">Server:</label></td>
+          <td>
+            <input type="text" id="server-address" name="server-address" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="topic">Topic:</label></td>
+          <td><input type="text" id="topic" name="topic" /></td>
+        </tr>
+      </table>
       <button id="save-button" type="submit">Save</button>
     </form>
 
